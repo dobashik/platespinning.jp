@@ -1,0 +1,16 @@
+backend:
+  name: github
+  repo: dobashik/platespinning.jp  # あなたのユーザー名/リポジトリ名
+media_folder: "images"  # 画像保存フォルダ
+public_folder: "/images"
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "index.html"  # あなたのHTMLファイル名（変えなければindex.html）
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Body, name: body, widget: markdown}
+          - {label: Image, name: image, widget: image}
